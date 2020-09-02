@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/quark-courses/static/css/main.4bda59c0.chunk.css",
+    "main.js": "/quark-courses/static/js/main.a8994754.chunk.js",
+    "main.js.map": "/quark-courses/static/js/main.a8994754.chunk.js.map",
+    "runtime-main.js": "/quark-courses/static/js/runtime-main.5afdc4ba.js",
+    "runtime-main.js.map": "/quark-courses/static/js/runtime-main.5afdc4ba.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/quark-courses/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.da811a71.chunk.js": "/quark-courses/static/js/2.da811a71.chunk.js",
+    "static/js/2.da811a71.chunk.js.map": "/quark-courses/static/js/2.da811a71.chunk.js.map",
+    "index.html": "/quark-courses/index.html",
+    "precache-manifest.626b7d04c5d96a5c5ba4e01105a74166.js": "/quark-courses/precache-manifest.626b7d04c5d96a5c5ba4e01105a74166.js",
+    "service-worker.js": "/quark-courses/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/quark-courses/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.4bda59c0.chunk.css.map": "/quark-courses/static/css/main.4bda59c0.chunk.css.map",
+    "static/js/2.da811a71.chunk.js.LICENSE.txt": "/quark-courses/static/js/2.da811a71.chunk.js.LICENSE.txt",
+    "static/media/HeroBanner.png": "/quark-courses/static/media/HeroBanner.8770db2a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5afdc4ba.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.da811a71.chunk.js",
+    "static/css/main.4bda59c0.chunk.css",
+    "static/js/main.a8994754.chunk.js"
+  ]
+}
