@@ -1,0 +1,112 @@
+/*Hero*/
+
+.coursesHero{
+    margin-top: 60px;
+    height: 600px;
+}
+
+.coursesHero__container{
+    max-height: 500px;
+}
+
+.coursesHero__container-row{
+    height: 100%;
+}
+
+.coursesHero__info{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.coursesHero__info-title{
+    margin: 0;
+}
+
+.coursesHero__info-title1{
+    color: var(--blue);
+    font-size: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.coursesHero__info-title2{  
+    font-size: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.coursesHero__info-text{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    text-align: center;
+}
+
+.coursesHero__banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.coursesHero__banner-img{
+    width: 100%;
+}
+
+.coursesHero__buttons{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coursesHero__buttons-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.coursesHero__buttons-contact{
+    font-weight: 350;
+    width: 350px;
+}
+
+/*Materias*/
+
+
+.materias__container-SubjectButtons{
+    margin-top: 40px;
+}
+
+.materias__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.materias__title-text{
+    color: var(--blue);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.materias__col{
+    display: flex;
+    flex-flow: column;
+}
+
+.materias__col-1{
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.materias__col-2{
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+

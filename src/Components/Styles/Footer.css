@@ -1,0 +1,37 @@
+:root{
+    --blue: #407BFF;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.footer__row{
+    height: 100%;
+}
+
+.footer__ppal{
+    height: 50px;
+    background-color: var(--blue) ;
+    color: white;
+}
+
+.text-col{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text-col span{
+    height: fit-content;
+}

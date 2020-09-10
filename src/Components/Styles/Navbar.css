@@ -1,0 +1,50 @@
+:root{
+    --blue: #407BFF;
+}
+
+.navbar__ppal{
+    height: 100px;
+    box-sizing: content-box;
+}
+
+.navbar__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.navbar__logo{
+    padding-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo__text{
+    margin: 0;
+    font-size: 25px;
+} 
+
+.navbar__buttons{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__buttons button{
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.quarkName{
+    color: var(--blue)
+}
+.coursesName{
+    color: black
+}
+
+.navbar__button-main{
+    background-color: var(--blue);
+}

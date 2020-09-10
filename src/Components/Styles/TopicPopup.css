@@ -1,0 +1,41 @@
+.modal__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5%;
+}
+
+.modal__header-loho{
+    height: 8px;
+    width: 8px;
+}
+
+.modal__header-button{
+    background-color: transparent;
+    border: none
+}
+
+.modal__video{
+    height: 87%;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__video-iframe {
+    height: 100%;
+    width: 70%;
+}
+
+.modal__footer{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    height: 5%;
+}
+
+.modal__footer-button{
+    height: 40px;
+}

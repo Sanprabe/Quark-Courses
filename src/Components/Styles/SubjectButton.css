@@ -1,0 +1,34 @@
+::root{
+    --blue: #407BFF;
+}
+
+.subject-arrow-svg{
+    fill: var(--blue);
+    font-weight: 900;
+}
+
+.subject:hover .subject-arrow-svg{
+    fill: white;
+}
+
+.materias{
+    margin: 0 0 80px 0;
+}
+
+.subject{
+    width: 350px;
+    height: 70px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.subject__title h3{
+    font-weight: 200;
+}
+
+.subjects__image-img{
+    height: 50px;
+}
+

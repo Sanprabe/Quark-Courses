@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+:root{
+    --blue: #407BFF;
+}
+
+.subjects{
+    height: 100%;
+    margin-bottom: 50px ;
+}
+
+.subjects__badge{
+    padding: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.subjects__badge-img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.subjects__badge-img img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.subjects__badge-info-text{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.subjects__topics-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subjects__topics-title-text{
+    color: var(--blue);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.subjects__topics-elements{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
