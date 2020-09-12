@@ -1,12 +1,12 @@
 import React from 'react'
-import './Styles/HomeBadges.css'
+import './styles/HomeBadges.css'
 
 export default class HomeBadges extends React.Component{
     render(){
         return(
             <div className="home__badges">
                 <img 
-                src={require(`../Images/${this.props.img}`)}
+                src={require(`../../Images/${this.props.img}`)}
                 className='home__badges-img'
                 alt={this.props.imgAlt}
                 />

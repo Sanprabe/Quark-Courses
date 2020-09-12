@@ -5,7 +5,7 @@ import * as Scroll from 'react-scroll';
 import ImagenHero from '../Images/HeroBanner.png'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import './Styles/Home.css'
-import HomeBadges from '../Components/HomeBadges'
+import HomeBadges from '../Components/Home/HomeBadges'
 
 
 export default class Home extends React.Component{

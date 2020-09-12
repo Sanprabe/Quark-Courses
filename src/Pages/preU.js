@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import SubjectButton from '../Components/SubjectButton'
 import * as Scroll from 'react-scroll';
 
+import SubjectButton from '../Components/PreU/SubjectButton'
 
 import ImagenCourses from '../Images/Courses.png'
 import './Styles/preU.css'
+
 
 export default class PreU extends React.Component{
     LinkScroll = Scroll.Link;
@@ -22,11 +23,6 @@ export default class PreU extends React.Component{
                             </p>
                             <p className='coursesHero__info-text h3'>PreUniversitario online 100% gratis. <br/> Avanza a tu ritmo y contacta a un profe cuando lo necesites</p>
                             <div className="coursesHero__buttons">
-                                {/* <this.LinkScroll activeClass="active" to="subject-section" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-                                    <button className='btn btn-primary coursesHero__buttons-btn coursesHero__buttons-curso'>
-                                        <span>Comencemos</span>
-                                    </button>
-                                </this.LinkScroll> */}
                                 <Link className='btn btn-outline-primary coursesHero__buttons-btn coursesHero__buttons-contact'>
                                     <span>Contacta a un profe</span>
                                 </Link>

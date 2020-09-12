@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './Styles/Topic.css'
+import './styles/Topic.css'
 
 
 export default function TopicNormal (props){

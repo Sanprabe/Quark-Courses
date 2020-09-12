@@ -4,8 +4,8 @@ import Modal from 'react-modal'
 import Video from './Video'
 import Test from './Test'
 
-import './Styles/Topic.css'
-import './Styles/TopicPopup.css'
+import './styles/Topic.css'
+import './styles/TopicPopup.css'
 
 Modal.setAppElement('#content')
 
@@ -57,7 +57,7 @@ export default class TopicPopup extends React.Component{
                                 <svg className="modal__header-logo" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
                             </button>
                         </div>
-                        {this.state.testIsOpen? <Test questions={this.props.questions}  /> : <Video video={this.props.info.link} openTest={this.openTest} /> }
+                        {this.state.testIsOpen? <Test questions={this.props.questions} closeModal={this.closeModal} topic={this.props.info.topic}  /> : <Video video={this.props.info.link} openTest={this.openTest} /> }
                         <div className="modal__test">
     
                         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Layout from './Layout'
+import Layout from './Generales/Layout'
 import Home from '../Pages/Home'
 import Preu from '../Pages/preU';
 import Maths from '../Pages/Maths/Maths'

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import QuestionBox from './questionBox'
 import Result from './resultBox'
 
-import './Styles/Test.css'
+import './styles/Test.css'
 
 
 export default class Test extends Component {
@@ -49,9 +49,7 @@ export default class Test extends Component {
     render() {
         return (
             <div className="test__container"> 
-                <div className="test__title">
-                TEST:
-                </div>
+                <div className="test__title">TEST: {this.props.topic}</div>
                 <div className="test__questions">
                     {
                     this.state.questionBank.length > 0 &&  
@@ -66,7 +64,7 @@ export default class Test extends Component {
                     { 
                     this.state.responses === 5 
                         ? (<Result score={this.state.score} 
-                        playAgain={this.newGame}/>) 
+                        playAgain={this.newGame} closeModal={this.props.closeModal}/>)
                         : null
                     }
                 </div>

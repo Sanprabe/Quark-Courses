@@ -1,5 +1,5 @@
 import React from 'react'
-import Subjects from '../../Components/subjects'
+import Subjects from '../../Components/PreU/subjects.js'
 import LogoPhysics from '../../Images/physics.jpg'
 
 export default class Physics extends React.Component{

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import Topic from './Topic'
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import './Styles/subjects.css'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.css'
+import './styles/subjects.css'
 
 
 export default class Subjects extends React.Component {

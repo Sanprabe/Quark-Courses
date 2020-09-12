@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+.questionBox__container{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.questionBox__question{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.questionBox__answers{
+    margin: 10px 0;
+}
+
+.questionBox__answerBtn{
+    margin: 0 5px;
+    padding: 15px 30px;
+}

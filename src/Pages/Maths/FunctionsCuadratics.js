@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Subjects from '../../Components/subjects'
+import Subjects from '../../Components/PreU/subjects'
 import LogoMaths from '../../Images/maths.jpg'
 
 export default class MathsFunctionCuadratic extends React.Component{

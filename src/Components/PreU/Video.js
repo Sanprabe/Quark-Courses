@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Styles/Topic.css'
+import './styles/Topic.css'
 
 export default class Video extends React.Component {
     render(){

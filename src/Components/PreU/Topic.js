@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Styles/Topic.css'
+import './styles/Topic.css'
 
 import TopicNormal from './TopicNormal'
 import TopicPopup from './TopicPopup'

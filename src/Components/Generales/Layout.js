@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer'
 
-import './Styles/Layout.css'
+import './styles/Layout.css'
 
 export default function Layout(props) {
 

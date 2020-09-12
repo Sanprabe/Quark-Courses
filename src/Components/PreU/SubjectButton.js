@@ -1,8 +1,8 @@
 import React from 'react'
-
-import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../Components/Styles/SubjectButton.css'
 import { Link } from 'react-router-dom'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.css'
+
+import './styles/SubjectButton.css'
 
 export default function SubjectButton (props){
     return(
