@@ -1,6 +1,7 @@
 import React from 'react'
 import Subjects from '../../Components/subjects'
 import LogoMaths from '../../Images/maths.jpg'
+import Preguntas from '../../Questions/preguntasPrueba'
 
 export default class Maths extends React.Component{
     
@@ -15,7 +16,8 @@ export default class Maths extends React.Component{
         topic_1 :{
             name: 'Matematicas Básica',
             to: 'https://www.youtube.com/embed/3ppZzNF4kx8',
-            final: true
+            final: true,
+            preguntas: Preguntas
         },
         topic_2 :{
             name: 'Funciones',

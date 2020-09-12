@@ -27,15 +27,15 @@ export default class Subjects extends React.Component {
                             </div>
                             <div className="subjects__topics col container">
                                 <div className="subjects__topics-elements row">
-                                    {this.props.topic.topic_1 && (<Topic topic={this.props.topic.topic_1.name} link={this.props.topic.topic_1.to} final = {this.props.topic.topic_1.final} />)}
-                                    {this.props.topic.topic_2 && (<Topic topic={this.props.topic.topic_2.name} link={this.props.topic.topic_2.to} final = {this.props.topic.topic_2.final} />)}
-                                    {this.props.topic.topic_3 && (<Topic topic={this.props.topic.topic_3.name} link={this.props.topic.topic_3.to} final = {this.props.topic.topic_3.final} />)}
-                                    {this.props.topic.topic_4 && (<Topic topic={this.props.topic.topic_4.name} link={this.props.topic.topic_4.to} final = {this.props.topic.topic_4.final} />)}
-                                    {this.props.topic.topic_5 && (<Topic topic={this.props.topic.topic_5.name} link={this.props.topic.topic_5.to} final = {this.props.topic.topic_5.final} />)}
-                                    {this.props.topic.topic_6 && (<Topic topic={this.props.topic.topic_6.name} link={this.props.topic.topic_6.to} final = {this.props.topic.topic_6.final} />)}
-                                    {this.props.topic.topic_7 && (<Topic topic={this.props.topic.topic_7.name} link={this.props.topic.topic_7.to} final = {this.props.topic.topic_7.final} />)}
-                                    {this.props.topic.topic_8 && (<Topic topic={this.props.topic.topic_8.name} link={this.props.topic.topic_8.to} final = {this.props.topic.topic_8.final} />)}
-                                    {this.props.topic.topic_9 && (<Topic topic={this.props.topic.topic_9.name} link={this.props.topic.topic_9.to} final = {this.props.topic.topic_9.final} />)}
+                                    {this.props.topic.topic_1 && (<Topic topic={this.props.topic.topic_1.name} link={this.props.topic.topic_1.to} final = {this.props.topic.topic_1.final} questions = {this.props.topic.topic_1.preguntas} />)}
+                                    {this.props.topic.topic_2 && (<Topic topic={this.props.topic.topic_2.name} link={this.props.topic.topic_2.to} final = {this.props.topic.topic_2.final} questions = {this.props.topic.topic_2.preguntas} />)}
+                                    {this.props.topic.topic_3 && (<Topic topic={this.props.topic.topic_3.name} link={this.props.topic.topic_3.to} final = {this.props.topic.topic_3.final} questions = {this.props.topic.topic_3.preguntas} />)}
+                                    {this.props.topic.topic_4 && (<Topic topic={this.props.topic.topic_4.name} link={this.props.topic.topic_4.to} final = {this.props.topic.topic_4.final} questions = {this.props.topic.topic_4.preguntas} />)}
+                                    {this.props.topic.topic_5 && (<Topic topic={this.props.topic.topic_5.name} link={this.props.topic.topic_5.to} final = {this.props.topic.topic_5.final} questions = {this.props.topic.topic_5.preguntas} />)}
+                                    {this.props.topic.topic_6 && (<Topic topic={this.props.topic.topic_6.name} link={this.props.topic.topic_6.to} final = {this.props.topic.topic_6.final} questions = {this.props.topic.topic_6.preguntas} />)}
+                                    {this.props.topic.topic_7 && (<Topic topic={this.props.topic.topic_7.name} link={this.props.topic.topic_7.to} final = {this.props.topic.topic_7.final} questions = {this.props.topic.topic_7.preguntas} />)}
+                                    {this.props.topic.topic_8 && (<Topic topic={this.props.topic.topic_8.name} link={this.props.topic.topic_8.to} final = {this.props.topic.topic_8.final} questions = {this.props.topic.topic_8.preguntas} />)}
+                                    {this.props.topic.topic_9 && (<Topic topic={this.props.topic.topic_9.name} link={this.props.topic.topic_9.to} final = {this.props.topic.topic_9.final} questions = {this.props.topic.topic_9.preguntas} />)}
                                     <Link to={this.props.linkBack}>
                                         <button type="button" class="btn btn-primary topic">
                                             <div className="topic__arrow">

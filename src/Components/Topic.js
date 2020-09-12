@@ -6,12 +6,13 @@ import TopicNormal from './TopicNormal'
 import TopicPopup from './TopicPopup'
 
 export default class Topic extends React.Component{
+    Props = this.props
+    Popup = this.props.final
+    Preguntas = this.props.questions
     render(){
-        const Props = this.props
-        const Popup = this.props.final
         return(
             <React.Fragment>
-                {Popup ? <TopicPopup info={Props} /> :<TopicNormal info={Props}  />}
+                {this.Popup ? <TopicPopup info={this.Props} questions={this.Preguntas} /> :<TopicNormal info={this.Props}  />}
             </React.Fragment>
         )
     }
