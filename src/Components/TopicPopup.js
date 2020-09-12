@@ -14,7 +14,7 @@ export default class TopicPopup extends React.Component{
         super(props);
         this.state = {
             modalIsOpen: false,
-            testIsOpen:false
+            testIsOpen: false
         }
     
         this.openModal = () =>{

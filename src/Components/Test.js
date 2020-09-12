@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import QuestionBox from './questionBox'
 import Result from './resultBox'
 
+import './Styles/Test.css'
+
 
 export default class Test extends Component {
     constructor(props){
@@ -46,27 +48,28 @@ export default class Test extends Component {
 
     render() {
         return (
-            <div className="container"> 
-                <div className="title"> 
-                Test
-                </div> 
-                {
-                this.state.questionBank.length > 0 &&  
-                this.state.responses < 5 &&  
-                this.state.questionBank.map(
-                ({question, answers, correct, questionId}) => <QuestionBox 
-                question= {question} 
-                options={answers} 
-                key={questionId} 
-                selected={answer => this.computeAnswer(answer, correct)}/>)} 
-            
-                { 
-                this.state.responses === 5 
-                    ? (<Result score={this.state.score} 
-                    playAgain={this.newGame}/>) 
-                    : null
-                }
-        
+            <div className="test__container"> 
+                <div className="test__title">
+                TEST:
+                </div>
+                <div className="test__questions">
+                    {
+                    this.state.questionBank.length > 0 &&  
+                    this.state.responses < 5 &&  
+                    this.state.questionBank.map(
+                    ({question, answers, correct, questionId}) => <QuestionBox 
+                    question= {question} 
+                    options={answers} 
+                    key={questionId} 
+                    selected={answer => this.computeAnswer(answer, correct)}/>)} 
+                
+                    { 
+                    this.state.responses === 5 
+                        ? (<Result score={this.state.score} 
+                        playAgain={this.newGame}/>) 
+                        : null
+                    }
+                </div>
           </div>
         )
     }
