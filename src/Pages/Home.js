@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import * as Scroll from 'react-scroll';
+import ContactPopup from '../Components/Generales/contactPopup'
 
 import ImagenHero from '../Images/HeroBanner.png'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -9,6 +10,26 @@ import HomeBadges from '../Components/Home/HomeBadges'
 
 
 export default class Home extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            modalIsOpen: false,
+        }
+    
+        this.openModal = () =>{
+            this.setState({
+                modalIsOpen: true
+            })
+        }
+    
+        this.closeModal = () =>{
+            this.setState({
+                modalIsOpen: false,
+                testIsOpen: false
+            })
+        }
+    }
+
     LinkScroll = Scroll.Link;
 
     Badges = {
@@ -93,14 +114,15 @@ export default class Home extends React.Component{
                                 <Link className='btn btn-primary courses__buttons-btn courses__buttons-curso' to='/PreU'>
                                     <span>Ingresa al curso</span>
                                 </Link>
-                                <Link className='btn btn-outline-primary courses__buttons-btn courses__buttons-contact'>
+                                <button onClick={this.openModal} className='btn btn-outline-primary courses__buttons-btn courses__buttons-contact' >
                                     <span>Contacta a un profe</span>
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <ContactPopup modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
             </React.Fragment>
         )
     }

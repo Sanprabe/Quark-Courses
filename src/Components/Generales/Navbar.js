@@ -1,9 +1,33 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+// import Modal from 'react-modal'
 
+import ContactPopup from './contactPopup'
 import './styles/Navbar.css'
 
+// import GmailLogo from '../../Images/gmail.png'
+
 export default class Navbar extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            modalIsOpen: false,
+        }
+    
+        this.openModal = () =>{
+            this.setState({
+                modalIsOpen: true
+            })
+        }
+    
+        this.closeModal = () =>{
+            this.setState({
+                modalIsOpen: false,
+                testIsOpen: false
+            })
+        }
+    }
+
     render(){
         return(
             <div className="navbar__ppal">
@@ -17,14 +41,13 @@ export default class Navbar extends React.Component{
                         </Link>
                     </div>
                     <div className="navbar__buttons">
-                        <Link to='/'>
+                        {/* <Link to='/'>
                             <button className='btn btn-default'>Quienes Somos</button>
-                        </Link>
-                        <Link to='/'>
-                            <button className='btn btn-primary navbar__button-main'>Contacta un profesor</button>
-                        </Link>
+                        </Link> */}{/* Crear pagina de quienes somos */}
+                        <button onClick={this.openModal} className='btn btn-primary navbar__button-main'>Contacta un profesor</button>
                     </div>
                 </div>
+                <ContactPopup modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
             </div>
         )
     }

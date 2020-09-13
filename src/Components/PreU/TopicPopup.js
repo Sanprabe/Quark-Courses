@@ -58,9 +58,6 @@ export default class TopicPopup extends React.Component{
                             </button>
                         </div>
                         {this.state.testIsOpen? <Test questions={this.props.questions} closeModal={this.closeModal} topic={this.props.info.topic}  /> : <Video video={this.props.info.link} openTest={this.openTest} /> }
-                        <div className="modal__test">
-    
-                        </div>
                 </Modal>
             </React.Fragment>      
         )

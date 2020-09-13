@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
 :root{
     --blue: #407BFF;
 }
@@ -47,4 +49,105 @@
 
 .navbar__button-main{
     background-color: var(--blue);
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.modalContact{
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;
+    top: 29%;
+    left: 25%;
+    right: 25%;
+    bottom: 29%;
+    background-color: white;
+}
+
+.modalContact__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5%;
+}
+
+.modalContact__header-button{
+    background-color: transparent;
+    border: none
+}
+
+.modalContact__info{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContact__title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.modalContact__text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modalContact__link-container{
+    width: 100%;
+    margin-top: 10px ;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+a.deco-none {
+    color:#000000 !important;
+    text-decoration:none;
+}
+
+.modalLink{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a2a1a1;
+    border-radius: 20px;
+    height: 170px;
+    width: 170px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.modalLink__logo{
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.modalLink__text{
+    color: #626161;
+}
+
+.modalLink__logo-svg{
+    fill: #33B13A;
+    height: 100px;
+    width: 100px;
+}
+
+.modalLink__logo-png{
+    height: 100px;
+    width: 100px;
 }
