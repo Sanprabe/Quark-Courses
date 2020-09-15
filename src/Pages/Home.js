@@ -2,10 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import * as Scroll from 'react-scroll';
 import ContactPopup from '../Components/Generales/contactPopup'
-
-import ImagenHero from '../Images/HeroBanner.png'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+
+
 import './Styles/Home.css'
+import './Styles/HomeResponsive.css'
+import ImagenHero from '../Images/HeroBanner.png'
 import HomeBadges from '../Components/Home/HomeBadges'
 
 

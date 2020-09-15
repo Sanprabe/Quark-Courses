@@ -1,0 +1,48 @@
+@media all and (max-width: 1199px) {
+    
+    .hero{
+        padding: 30px 0;
+        height: max-content;
+    }
+    
+    .hero__container{
+        max-height: none
+    }
+
+    .hero__container-row{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hero__banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px
+    }
+  }
+
+
+@media all and (max-width: 635px) {
+    
+    .hero{
+        padding: 30px 0;
+        height: max-content;
+    }
+    
+    .hero__container{
+        max-height: none
+    }
+
+    .hero__container-row{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hero__banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px
+    }
+  }
