@@ -1,11 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import Modal from 'react-modal'
 
 import ContactPopup from './contactPopup'
 import './styles/Navbar.css'
-
-// import GmailLogo from '../../Images/gmail.png'
 
 export default class Navbar extends React.Component{
     constructor(props){

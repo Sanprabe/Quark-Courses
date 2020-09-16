@@ -95,9 +95,9 @@ export default class Home extends React.Component{
                             </div>
                         </div>
                         <div className="row valores__onclick">
-                            <Link className='btn btn-primary valores__onclick-buttons' to='/'>
+                            <button onClick={this.openModal} className='btn btn-primary valores__onclick-buttons' to='/'>
                                 <span>Contrata una asesoría personalizada</span>
-                            </Link>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -16,10 +16,6 @@
     font-weight: 900;
 }
 
-/* .materias{
-    margin: 0 0 80px 0;
-} */
-
 .topic{
     width: 450px;
     height: 70px;
@@ -29,6 +25,54 @@
     align-items: center;
 }
 
+.topic__title h3{
+    font-size: 2.8rem;
+}
+
 .topics__image-img{
     height: 50px;
+}
+
+@media all and (max-width: 992px) {
+    html{
+        font-size: 9px !important;
+    }
+    .topic{
+        width: 400px;
+        height: 60px;
+        margin: 5px 0 15px 0;
+    }
+}
+
+@media all and (max-width: 426px) {
+    html{
+        font-size: 6px !important;
+    }
+    .topic{
+        width: 350px;
+        height: 50px;
+        margin: 5px 0 10px 0;
+    }
+}
+
+@media all and (max-width: 375px) {
+    html{
+        font-size: 6px !important;
+    }
+    .topic{
+        width: 300px;
+        height: 40px;
+        margin: 5px 0 10px 0;
+    }
+}
+
+@media all and (max-width: 320px) {
+    html{
+        font-size: 5.5px !important;
+    }
+    .topic{
+        width: 250px;
+        height: 40px;
+        margin: 5px 0 10px 0;
+    }
 }

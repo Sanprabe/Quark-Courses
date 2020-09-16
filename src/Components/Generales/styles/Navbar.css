@@ -55,7 +55,7 @@
     background-color: var(--blue);
 }
 
-.Overlay {
+/* .Overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,10 +68,10 @@
     border-radius: 10px;
     position: absolute;
     padding: 20px;
-    top: 29%;
+    top: 25%;
     left: 25%;
     right: 25%;
-    bottom: 29%;
+    bottom: 25%;
     background-color: white;
 }
 
@@ -154,7 +154,7 @@ a.deco-none {
 .modalLink__logo-png{
     height: 100px;
     width: 100px;
-}
+} */
 
 @media all and (max-width: 767px) {
     .navbar__ppal{
