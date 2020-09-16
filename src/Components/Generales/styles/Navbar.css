@@ -40,6 +40,10 @@
     margin-right: 20px;
 }
 
+.navbar__button-mainButton{
+    display: none;
+}
+
 .quarkName{
     color: var(--blue)
 }
@@ -150,4 +154,36 @@ a.deco-none {
 .modalLink__logo-png{
     height: 100px;
     width: 100px;
+}
+
+@media all and (max-width: 767px) {
+    .navbar__ppal{
+        height: 80px;
+        box-sizing: content-box;
+    }
+
+    .navbar__buttons button{
+        margin-right: 20px;
+    }
+
+    .navbar__button-main{
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar__button-mainButton{
+        display: unset;
+        fill: white;
+    }
+
+    .navbar__button-mainText{
+        display: none;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .navbar__buttons button{
+        margin-right: 5px;
+    }
 }

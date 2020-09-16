@@ -7,7 +7,7 @@ import './styles/contactPopup.css'
 
 export default function ContactPoup(props) {
     return (
-        <Modal isOpen={props.modalIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={props.modalIsOpen} className='modalContact' overlayClassName="Overlay">
+        <Modal isOpen={props.modalIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={props.closeModal} className='modalContact' overlayClassName="Overlay">
                         <div className="modalContact__header">
                             <button onClick={props.closeModal} className="modalContact__header-button">
                                 <svg className="modalContact__header-logo" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>

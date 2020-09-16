@@ -32,7 +32,7 @@ export default class PreU extends React.Component{
     LinkScroll = Scroll.Link;
     render(){
         return(
-            <div>
+            <React.Fragment>
                 <div className="coursesHero">
                     <div className="container coursesHero__container">
                         <div className="row coursesHero__container-row">
@@ -52,9 +52,9 @@ export default class PreU extends React.Component{
                                 <img src={ImagenCourses} alt="" className='coursesHero__banner-img' />
                             </div>    
                         </div>
-                        <hr />
                     </div>
                 </div>
+                <hr />
                 <div className="materias" name='subject-section'>
                     <div className="container materias__container-general">
                         <div className="row materias__title">
@@ -89,7 +89,7 @@ export default class PreU extends React.Component{
                     </div>
                 </div>
                 <ContactPopup modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
-            </div>
+            </React.Fragment>
         )
     }
 }

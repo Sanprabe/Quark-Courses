@@ -33,5 +33,17 @@ a:hover{
 }
 
 .text-col span{
+    font-size: 1.5rem;
     height: fit-content;
+}
+
+@media all and (max-width: 426px) {
+    .footer__ppal{
+        height: 30px;
+        background-color: var(--blue) ;
+        color: white;
+    }
+    .text-col span{
+        font-size: 2rem;
+    }
 }

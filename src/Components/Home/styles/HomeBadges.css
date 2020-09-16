@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
+html{
+    font-size: 10px;
+}
+
 .home__badges{
     display: flex;
     flex-flow: column;
@@ -15,6 +19,10 @@
     margin-bottom: 30px;
 }
 
+.valores__title-text{
+    font-size: 4rem;
+}
+
 .home__badges-img{
     height: 200px;
 }
@@ -24,11 +32,18 @@
     margin-top: 10px;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    font-size: 3.2rem;
 }
 
 .home__badges-text{
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #808080;
     text-align: center;
+}
+
+@media all and (max-width: 426px) {
+    .home__badges-img{
+        height: 150px;
+    }
 }
