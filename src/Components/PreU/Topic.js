@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './styles/Topic.css'
-
 import TopicNormal from './TopicNormal'
 import TopicPopup from './TopicPopup'
 

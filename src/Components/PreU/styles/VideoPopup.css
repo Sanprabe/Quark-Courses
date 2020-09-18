@@ -1,13 +1,13 @@
-.Overlay__topicPopup {
+.overlay__videoPopup {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
-  }
+}
 
-.modal__topicPopup{
+.modal__videoPopup{
     border-radius: 10px;
     position: absolute;
     padding: 20px 0;
@@ -20,10 +20,9 @@
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
-    /* max-height: 100vh;    */
 }
 
-.modal__header{
+.modal__videoHeader{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -31,12 +30,7 @@
     padding: 0 20px;
 }
 
-.modal__header-loho{
-    height: 8px;
-    width: 8px;
-}
-
-.modal__header-button{
+.modal__videoHeader-button{
     background-color: transparent;
     border: none
 }
@@ -45,11 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 20px; */
     max-height: 80vh;
     width: 90vw; 
     height: 45vw;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .modal__video-iframe {
@@ -57,13 +50,13 @@
     width: 100%;
 }
 
-.modal__footer{
+.modal__videoFooter{
     display: flex;
     justify-content: center;
     align-content: flex-end;
     height: 5%;
 }
 
-.modal__footer-button{
+.modal__videoFooter-button{
     height: 40px;
 }
