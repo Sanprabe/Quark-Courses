@@ -29,7 +29,12 @@
 
 .modalContact__header-button{
     background-color: transparent;
-    border: none
+    border: none;
+}
+
+.modalContact__header-logo{
+    height: 24px;
+    width: 24px;
 }
 
 .modalContact__info{

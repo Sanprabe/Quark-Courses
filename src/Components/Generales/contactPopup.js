@@ -3,6 +3,7 @@ import Modal from 'react-modal'
 
 import GmailLogo from '../../Images/gmail.png'
 import WhatsappLogo from '../../Images/whatsapp.png'
+import CloseLogo from '../../Images/closeLogo.png'
 
 import './styles/contactPopup.css'
 
@@ -11,7 +12,7 @@ export default function ContactPoup(props) {
         <Modal isOpen={props.modalIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={props.closeModal} className='modalContact' overlayClassName="Overlay">
                         <div className="modalContact__header">
                             <button onClick={props.closeModal} className="modalContact__header-button">
-                                <svg className="modalContact__header-logo" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
+                                <img className="modalContact__header-logo" src={CloseLogo} alt="closeLogo"/>
                             </button>
                         </div>
                         <div className="modalContact__info">
@@ -21,7 +22,7 @@ export default function ContactPoup(props) {
                                 <a href='https://wa.link/bt4129' className="deco-none" target='blank'>
                                     <div className='modalLink'>
                                         <div className="modalLink__logo">
-                                        <img className='modalLink__logo-png' src={WhatsappLogo} alt="."/>
+                                        <img className='modalLink__logo-png' src={WhatsappLogo} alt="Whatsapp Logo"/>
                                         </div>
                                         {/* <div className="modalLink__text">Whattsap</div> */}
                                     </div>
@@ -29,7 +30,7 @@ export default function ContactPoup(props) {
                                 <a href="mailto:sanprabet@gmail.com?subject=Clases%20Online%20Efectivas%20&body=Deseo conocer más sobre las tutorias personalizadas de Quark Courses" className="deco-none" target='blank'>
                                     <div className='modalLink'>
                                         <div className="modalLink__logo">
-                                            <img className='modalLink__logo-png' src={GmailLogo} alt="."/>
+                                            <img className='modalLink__logo-png' src={GmailLogo} alt="Email Logo"/>
                                         </div>
                                         {/* <div className="modalLink__text">E-mail</div> */}
                                     </div>

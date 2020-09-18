@@ -3,9 +3,11 @@ import Modal from 'react-modal'
 
 import Video from './Video'
 import Test from './Test'
+import CloseLogo from '../../Images/closeLogo.png'
 
 import './styles/Topic.css' //Diseño del botón
 import './styles/VideoPopup.css'
+import './styles/TestPopup.css'
 
 Modal.setAppElement('#content')
 
@@ -56,15 +58,15 @@ export default class TopicPopup extends React.Component{
                 <Modal isOpen={this.state.modalVideoIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={this.openVideoModal} className='modal__videoPopup' overlayClassName="overlay__videoPopup">
                     <div className="modal__videoHeader">
                         <button onClick={this.closeVideoModal} className="modal__videoHeader-button">
-                            <svg className="modal__videoHeader-logo" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
+                            <img className="modal__videoHeader-logo" src={CloseLogo} alt="closeLogo"/>
                         </button>
                     </div>
                     <Video video={this.props.info.link} openTest={this.openTestModal} />
                 </Modal>
-                <Modal isOpen={this.state.modalTestIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={this.openTestModal} className='modal__videoPopup' overlayClassName="overlay__videoPopup">
-                    <div className="modal__videoHeader">
-                        <button onClick={this.closeTestModal} className="modal__videoHeader-button">
-                            <svg className="modal__videoHeader-logo" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
+                <Modal isOpen={this.state.modalTestIsOpen} shouldCloseOnOverlayClick={false} onRequestClose={this.openTestModal} className='modal__testPopup' overlayClassName="overlay__testPopup">
+                    <div className="modal__testHeader">
+                        <button onClick={this.closeTestModal} className="modal__testHeader-button">
+                            <img className="modal__testHeader-logo" src={CloseLogo} alt="closeLogo"/>
                         </button>
                     </div>
                     <Test questions={this.props.questions} closeModal={this.closeVideoModal} topic={this.props.info.topic}  />

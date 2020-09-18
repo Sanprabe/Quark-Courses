@@ -3,9 +3,6 @@ import React, { Component } from 'react'
 import QuestionBox from './questionBox'
 import Result from './resultBox'
 
-import './styles/Test.css'
-
-
 export default class Test extends Component {
     constructor(props){
         super(props);
@@ -55,7 +52,7 @@ export default class Test extends Component {
                     this.state.questionBank.length > 0 &&  
                     this.state.responses < 5 &&  
                     this.state.questionBank.map(
-                    ({question, answers, correct, questionId}) => <QuestionBox 
+                    ({question, answers, correct, questionId}) => <QuestionBox
                     question= {question} 
                     options={answers} 
                     key={questionId} 

@@ -1,0 +1,99 @@
+:root{
+    --blue: #407BFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+.overlay__testPopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__testPopup{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    position: absolute;
+    padding: 1% 0;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal__testHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10px;
+    padding: 0 20px;
+}
+
+.modal__testHeader-button{
+    background-color: transparent;
+    border: none;
+    height: 24px;
+    width: 24px;
+}
+
+
+.test__container{
+    -webkit-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.82);
+    -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.82);
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.82);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    margin: 10px auto;
+    width: 98%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 90%;
+}
+
+.test__title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    padding: 20px 0;
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.test__questions{
+    min-height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0;
+}
+.modal__testHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5%;
+}
+
+.modal__testHeader-button{
+    background-color: transparent;
+    border: none
+}
+
+.modal__testHeader-logo{
+    height: 24px;
+    width: 24px;
+}
+
